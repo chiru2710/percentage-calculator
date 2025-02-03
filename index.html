@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Calculator</title>
+    <link rel="stylesheet" href="pc.css">
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="titleTextView">Percentage Calculators</div>
+
+    <div id="calculationTypeRadioGroup">
+        <label><input type="radio" id="marksPercentageRadioButton" name="calculationType" value="marks" checked> Marks to %</label>
+        <label><input type="radio" id="cgpaPercentageRadioButton" name="calculationType" value="cgpa"> CGPA to %</label>
+        <label><input type="radio" id="sgpaPercentageRadioButton" name="calculationType" value="sgpa"> SGPA to %</label>
+    </div>
+
+    <div id="inputLayout">
+        <input type="number" id="scoredMarksEditText" placeholder="Scored Marks">
+        <input type="number" id="totalMarksEditText" placeholder="Total Marks">
+    </div>
+
+    <div id="buttonContainer">
+        <button id="clearButton">Clear</button>
+        <button id="calculateButton">Calculate</button>
+    </div>
+
+    <div id="resultTextView"></div>
+
+    <script src="pc.js"></script>
+
+</body>
+</html>
